@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <script src="/js/misc.js"></script>
+    <script src="/g/g.js"></script>
+    <script src="/js/games-navigation.js"></script>
+    <link rel="stylesheet" media="screen" href="/styles/style.css">
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <script src="/particles.js"></script>
+    <script src="/js/app.js"></script>
+     <div class="topnavbar">
+     <span onclick="window.location.href='/'"><img class="logoTop" src="/azurite-long.trans.png"></span>
+      <div class="topnavitem">
+        <a class="topnavtext" href="/games">Games</a>
+      </div>
+      <div class="topnavitem">
+        <a class="topnavtext" href="/">Home</a>
+      </div>
+    </div>
+    <div class="main">
+      <center>
+        <div class="gamecont">
+          <div class="inline">
+            <iframe class="gig" src="https://neongames.io/intermediary.html?game=/verticalad.html"></iframe>
+          </div>
+          <div class="gameframecontainer" id="frame">
+            <iframe src="/loader.html?game=/gms/cookie-clicker/&img=/img/cookie-clicker.png&name=Cookie Clicker" id="game_iframe" class="game_iframe"></iframe>
+            <div class="gameUIbar">
+              <h1 id="gmsName" class="gmsName">Cookie Clicker</h1>
+              <span style="float: right;" class="gamesicon inline" onclick="openFullscreen('game_iframe');">
+                <img class="gameUIbutton" src="/svg/ui/fullscreen.svg">
+              </span>
+            </div>
+          </div>
+          <div class="inline">
+            <iframe class="gig" src="https://neongames.io/intermediary.html?game=/verticalad.html"></iframe>
+          </div>
+        </div>
+        <br>
+        <div id="gamesMain"></div>
+      </center>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        loadGameOptions('all');
+      })
+    </script>
+  </body>
+</html>
